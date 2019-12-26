@@ -1,3 +1,4 @@
-const { udon } = require('./udon')
+const { udon, soba } = require('./udon')
 
 udon()
+soba()

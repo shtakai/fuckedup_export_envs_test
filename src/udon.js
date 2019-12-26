@@ -1,3 +1,8 @@
 const udon = () => { console.log('udon') }
+const soba = () => { console.log('soba') }
 
-module.exports = { udon }
+if (process.env.NODE_ENV === 'test') {
+  module.exports = { udon, soba }
+} else {
+  module.exports = { udon }
+}
